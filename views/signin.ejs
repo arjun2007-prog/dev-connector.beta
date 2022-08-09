@@ -1,0 +1,19 @@
+<%-include("partials/header.ejs");-%>
+    <!-- Custom styles for this template -->
+    <link href="style(signup).css" rel="stylesheet" />
+</head>
+
+<body class="text-center">
+    <form class="form-signin" action="/signin" method="post">
+        <img class="mb-4 logo" src="circle-cropped (2).png" alt="" width="72" height="72" />
+        <h1 class="h3 mb-3 font-weight-normal">CodeConnect</h1>
+
+        <input type="text" class="form-control top" placeholder="Email" name="email" required autofocus />
+      
+        <input type="password" class="form-control middle" placeholder="Password" name="password" required />
+        
+        <button class="btn btn-outline-primary signin-button" type="submit">
+            Sign In
+        </button>
+    </form>
+    <%-include("partials/footer.ejs");-%>

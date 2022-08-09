@@ -1,0 +1,9 @@
+<%-include("partials/header.ejs");-%>
+<h2>Check Out what other Devlopers have to say</h2>
+<%posts.forEach((currentData)=>{%>
+   <div class="jumbotron ">
+       <h6><%=currentData.author%></h6>
+       <h3><%=currentData.post%></h3>
+   </div>
+<%})%>
+<%-include("partials/footer.ejs");-%>

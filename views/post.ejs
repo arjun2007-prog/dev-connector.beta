@@ -1,0 +1,7 @@
+<%-include("partials/header.ejs");-%>
+<h2>Share something new</h2>
+<form action="/post" method="post">
+  <textarea name="post" id="" cols="50" rows="10"></textarea>
+  <button type="submit" name="user" value="<%=userWhoPosted%>">Post</button>
+</form>
+<%-include("partials/footer.ejs");-%>

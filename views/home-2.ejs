@@ -1,0 +1,11 @@
+<%-include("partials/header.ejs");-%>
+<a href="/post" style="color:blue">Post</a>
+<%others.forEach((currentUser)=>{ %>
+    <a href="/profile/<%=currentUser._id%>" class="jumbotron ">
+          <h1 class="display-4"><%=currentUser.name%></h1>
+          <p class="lead"><%=currentUser.about%></p>
+    </a>
+      <% }) %>
+   
+
+<%-include("partials/footer.ejs");-%>

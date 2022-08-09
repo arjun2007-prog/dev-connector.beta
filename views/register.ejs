@@ -1,0 +1,18 @@
+<%-include("partials/header.ejs");-%>
+<body class="text-center">
+    <img class="mb-4 logo" src="circle-cropped (2).png" alt="" width="72" height="72" />
+    <h1 class="h3 mb-3 font-weight-normal">CodeConnect</h1>
+    <form class="form-signin" action="/register" method="post">
+
+
+        <input type="email" class="form-control top" placeholder="Email" name="email" required autofocus />
+        
+
+        <input type="password" class="form-control middle" placeholder="Password" name="password" required />
+         
+        
+        <button class="btn btn-outline-primary signin-button" type="submit"> Sign In </button>
+    </form>
+
+    <script src="index.js"></script>
+    <%-include("partials/footer.ejs");-%>
